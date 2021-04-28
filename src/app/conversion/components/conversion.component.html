@@ -1,0 +1,23 @@
+<div class="screens">
+    <div class="grid-container-text">
+        <input type="text" value={{conversions.currentNumber}} placeholder="Integer" readonly>
+    </div>
+    <div class="grid-container-text ">
+        <input type="text" value={{conversions.transformedValue}} placeholder="Text" readonly>
+    </div>
+    <div class="grid-container">
+        <div><button type="button" (click)="getTheInput(1)" class="keypad">1</button> </div>
+        <div><button type="button" (click)="getTheInput(2)" class="keypad">2</button> </div>
+        <div><button type="button" (click)="getTheInput(3)" class="keypad">3</button> </div>
+        <div><button type="button" (click)="getTheInput(4)" class="keypad">4</button> </div>
+        <div><button type="button" (click)="getTheInput(5)" class="keypad">5</button> </div>
+        <div><button type="button" (click)="getTheInput(6)" class="keypad">6</button> </div>
+        <div><button type="button" (click)="getTheInput(7)" class="keypad">7</button> </div>
+        <div><button type="button" (click)="getTheInput(8)" class="keypad">8</button> </div>
+        <div><button type="button" (click)="getTheInput(9)" class="keypad">9</button> </div>
+        <div><button type="button" (click)="getTheInput('#')" class="keypad">#</button> </div>
+        <div><button type="button" (click)="getTheInput(0)" class="keypad " value="0">0</button> </div>
+        <div><button type="button" (click)="removeLastTypedValue()" class="keypad" value="<">&#60;</button> </div>
+    </div>
+</div>
+
