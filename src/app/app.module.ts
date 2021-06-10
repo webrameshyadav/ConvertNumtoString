@@ -7,11 +7,15 @@ import { ConversionComponent  } from './conversion/components/conversion.compone
 import * as conversionReducer from './conversion/store/conversion.reducer';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { environment } from 'src/environments/environment';
+import { NavComponent } from './nav/nav.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ConversionComponent
+    ConversionComponent,
+    NavComponent,
+    NotFoundComponent
 
   ],
   imports: [
