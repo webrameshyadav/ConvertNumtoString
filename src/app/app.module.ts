@@ -9,18 +9,22 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { environment } from 'src/environments/environment';
 import { NavComponent } from './nav/nav.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { MygridComponent } from './mygrid/mygrid.component';
+import { AgGridModule } from 'ag-grid-angular';
 
 @NgModule({
   declarations: [
     AppComponent,
     ConversionComponent,
     NavComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    MygridComponent
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    AgGridModule.withComponents([]),
     StoreModule.forRoot({conversionStore: conversionReducer.reducer}),
     StoreDevtoolsModule.instrument({
       maxAge: 25, // Retains last 25 states
