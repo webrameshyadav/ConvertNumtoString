@@ -14,12 +14,12 @@ export class AdServiceService {
     return [
       new AdItem(HeroJobAdComponentComponent, {name: 'Bombasto', bio: 'Brave as they come'}),
 
-      new AdItem(HeroProfileComponentComponent, {name: 'Dr IQ', bio: 'Smart as they come'}),
+      new AdItem(HeroJobAdComponentComponent, {name: 'Dr IQ', bio: 'Smart as they come'}),
 
-      new AdItem(HeroJobAdComponentComponent,   {headline: 'Hiring for several positions',
+      new AdItem(HeroProfileComponentComponent,   {headline: 'Hiring for several positions',
                                         body: 'Submit your resume today!'}),
 
-      new AdItem(HeroJobAdComponentComponent,   {headline: 'Openings in all departments',
+      new AdItem(HeroProfileComponentComponent,   {headline: 'Openings in all departments',
                                         body: 'Apply today'}),
     ];
   }
