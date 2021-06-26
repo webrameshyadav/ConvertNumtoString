@@ -11,6 +11,12 @@ import { NavComponent } from './nav/nav.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { MygridComponent } from './mygrid/mygrid.component';
 import { AgGridModule } from 'ag-grid-angular';
+import { DynamicCompComponent } from './dynamic-comp/dynamic-comp.component';
+import { HeroJobAdComponentComponent } from './dynamic-comp/hero-job-ad-component/hero-job-ad-component.component';
+import { HeroProfileComponentComponent } from './dynamic-comp/hero-profile-component/hero-profile-component.component';
+import { AdBannerComponent } from './dynamic-comp/ad-banner.component';
+import { AdDirectiveDirective } from './dynamic-comp/ad-directive.directive';
+
 
 @NgModule({
   declarations: [
@@ -18,9 +24,14 @@ import { AgGridModule } from 'ag-grid-angular';
     ConversionComponent,
     NavComponent,
     NotFoundComponent,
-    MygridComponent
-
+    MygridComponent,
+    DynamicCompComponent,
+    HeroJobAdComponentComponent,
+    HeroProfileComponentComponent,
+    AdBannerComponent,
+    AdDirectiveDirective
   ],
+  entryComponents: [ HeroJobAdComponentComponent, HeroProfileComponentComponent ],
   imports: [
     BrowserModule,
     AppRoutingModule,
