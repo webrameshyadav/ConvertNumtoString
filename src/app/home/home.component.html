@@ -1,0 +1,10 @@
+<p>home works! {{ title}}</p>
+
+
+<div>
+    <p>Today is {{birthday | date}}</p>
+    <p>Or if you prefer, {{birthday | date:'fullDate'}}</p>
+    <p>The time is {{birthday | date:'h:mm a z'}}</p>
+  </div>
+
+  <button (click)="onSave($event)">Save</button>

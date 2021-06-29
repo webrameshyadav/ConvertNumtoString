@@ -16,6 +16,7 @@ import { HeroJobAdComponentComponent } from './dynamic-comp/hero-job-ad-componen
 import { HeroProfileComponentComponent } from './dynamic-comp/hero-profile-component/hero-profile-component.component';
 import { AdBannerComponent } from './dynamic-comp/ad-banner.component';
 import { AdDirectiveDirective } from './dynamic-comp/ad-directive.directive';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { AdDirectiveDirective } from './dynamic-comp/ad-directive.directive';
     HeroJobAdComponentComponent,
     HeroProfileComponentComponent,
     AdBannerComponent,
-    AdDirectiveDirective
+    AdDirectiveDirective,
+    HomeComponent
   ],
   entryComponents: [ HeroJobAdComponentComponent, HeroProfileComponentComponent ],
   imports: [
