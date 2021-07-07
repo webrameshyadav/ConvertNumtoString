@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { BehaviorSubject, Subject } from 'rxjs';
+import { BehaviorSubject, Observable, Observer, Subject } from 'rxjs';
 
 @Component({
   selector: 'app-home',
@@ -49,4 +49,8 @@ AsyncSubject	...the latest value when the stream will close */
   {
     console.log(event);
   }
+
+  time = new Observable<string>((observer: Observer<string>) => {
+    setInterval(() => observer.next(new Date().toString()), 1000);
+  });
 }
