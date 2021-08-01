@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ConversionComponent } from './conversion/components/conversion.component';
 import { DynamicCompComponent } from './dynamic-comp/dynamic-comp.component';
 import { HomeComponent } from './home/home.component';
+import { MyMaterialComponent } from './my-material/my-material.component';
 import { MygridComponent } from './mygrid/mygrid.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'mygrid', component:  MygridComponent},
   { path: 'Dynamic', component:  DynamicCompComponent },
   { path: 'Home', component:  HomeComponent },
+  { path: 'Material', component:  MyMaterialComponent },
   { path: '**', component: NotFoundComponent }
 ];
 @NgModule({
