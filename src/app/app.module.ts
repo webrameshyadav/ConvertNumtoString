@@ -17,6 +17,7 @@ import { HeroProfileComponentComponent } from './dynamic-comp/hero-profile-compo
 import { AdBannerComponent } from './dynamic-comp/ad-banner.component';
 import { AdDirectiveDirective } from './dynamic-comp/ad-directive.directive';
 import { HomeComponent } from './home/home.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -43,6 +44,7 @@ import { HomeComponent } from './home/home.component';
       maxAge: 25, // Retains last 25 states
       logOnly: environment.production, // Restrict extension to log-only mode
     }),
+    BrowserAnimationsModule,
 
   ],
   providers: [],
