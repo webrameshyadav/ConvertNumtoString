@@ -54,6 +54,8 @@ import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatTreeModule} from '@angular/material/tree';
 import { MyMaterialComponent } from './my-material/my-material.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { MyparentComponent } from './parentchild/myparent/myparent.component';
+import { MychildComponent } from './parentchild/mychild/mychild.component';
 
 @NgModule({
   declarations: [
@@ -68,7 +70,9 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
     AdBannerComponent,
     AdDirectiveDirective,
     HomeComponent,
-    MyMaterialComponent
+    MyMaterialComponent,
+    MyparentComponent,
+    MychildComponent
   ],
   entryComponents: [ HeroJobAdComponentComponent, HeroProfileComponentComponent ],
   imports: [

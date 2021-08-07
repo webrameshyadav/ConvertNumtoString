@@ -1,3 +1,4 @@
+import { MyparentComponent } from './parentchild/myparent/myparent.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ConversionComponent } from './conversion/components/conversion.component';
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: 'Dynamic', component:  DynamicCompComponent },
   { path: 'Home', component:  HomeComponent },
   { path: 'Material', component:  MyMaterialComponent },
+  { path: 'PC', component:  MyparentComponent },
   { path: '**', component: NotFoundComponent }
 ];
 @NgModule({

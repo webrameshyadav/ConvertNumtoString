@@ -1,0 +1,5 @@
+<p>myparent Component!</p>
+<app-mychild [item]="currentItem" (newItemEvent)="addItem($event)"></app-mychild>
+<ul>
+    <li *ngFor="let item of items">{{item}}</li>
+  </ul>
