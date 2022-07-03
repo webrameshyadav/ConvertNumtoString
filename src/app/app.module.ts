@@ -56,6 +56,7 @@ import { MyMaterialComponent } from './my-material/my-material.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { MyparentComponent } from './parentchild/myparent/myparent.component';
 import { MychildComponent } from './parentchild/mychild/mychild.component';
+import { TextBoxcustomDirective } from './my-material/text-boxcustom.directive';
 
 @NgModule({
   declarations: [
@@ -72,7 +73,8 @@ import { MychildComponent } from './parentchild/mychild/mychild.component';
     HomeComponent,
     MyMaterialComponent,
     MyparentComponent,
-    MychildComponent
+    MychildComponent,
+    TextBoxcustomDirective
   ],
   entryComponents: [ HeroJobAdComponentComponent, HeroProfileComponentComponent ],
   imports: [
